@@ -10,7 +10,7 @@ describe('Header', () => {
   beforeAll(() => {
     mockedPush.mockImplementation(() => Promise.resolve());
     const MockedRouterContext = RouterContext as React.Context<unknown>;
-    RouterWrapper = ({ children }): JSX.Element => {
+    RouterWrapper = function ({ children }): JSX.Element {
       return (
         <MockedRouterContext.Provider
           value={{

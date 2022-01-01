@@ -4,10 +4,10 @@ import styles from './header.module.scss';
 
 export default function Header(): ReactElement {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <Link href="/">
         <img src="/assets/logo.svg" alt="logo" />
       </Link>
-    </div>
+    </header>
   );
 }
